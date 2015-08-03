@@ -1,0 +1,52 @@
+.page {
+  width: 1000px;
+  margin: auto;
+  height: 2000px;
+}
+
+hr{
+  height: 2px;
+  background-color: #000;
+}
+.titel {
+  width: 900px;
+  height: 70px;
+  margin: auto;
+  text-align: center;
+  margin-top: 33px;
+  background-color: #DDD;
+}
+.title h1 {
+  margin: auto;
+  font-size: 45px;
+  font-family: "NSimSun "
+}
+#information {
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0;
+  font-size: 100%;
+  text-align: center;
+  font-family: inherit;
+}
+#information>li {
+  list-style: none;
+
+  color: #000;
+  display: inline-table;
+  height: 100%;
+  line-height: 50px;
+  margin: 0 50px;
+
+  text-decoration: none;
+}
+#information>li u {
+  margin-left: 0px;
+}
+#fill {
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 23px;
+  font-size: 100%;
+  font-family: inherit;
+}
