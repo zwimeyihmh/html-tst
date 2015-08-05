@@ -1,22 +1,24 @@
-window.onload = function() {
-  var fm = document.getElementById('fm');
-  var sname = document.getElementById('sname');
-  var sid = document.getElementById('sid');
-  var sclass = document.getElementById('sclass');
-  var fill1 = document.getElementsByName('fill_1');
-  var fill2 = document.getElementsByName('fill2');
-  var choice1 = document.getElementsByName('choice1');
-  var choice2 = document.getElementsByName('choice2');
-  var choice3 = document.getElementsByName('choice3');
-  var choice4 = document.getElementsByName('choice4');
-  var judge1 = document.getElementsByName('judge_1');
-  var judge2 = document.getElementsByName('judge_2');
-
-  var result = document.getElementById('score');
+$(function() {
+  // var fm = document.getElementById('fm');
+  // var sname = document.getElementById('sname');
+  // var sid = document.getElementById('sid');
+  // var sclass = document.getElementById('sclass');
+  var fm = $("#fm")[0];
+  var sname = $("#sname")[0];
+  var sid = $("#sid")[0];
+  var sclass = $("#sclass")[0];
+  var fill1 = $("[name = 'fill_1']");
+  var fill2 = $("[name = 'fill2']");
+  var choice1 = $("[name = 'choice1']");
+  var choice2 = $("[name = 'choice2']");
+  var choice3 = $("[name = 'choice3']");
+  var choice4 = $("[name = 'choice4']");
+  var judge1 = $("[name = 'judge_1']");
+  var judge2 = $("[name = 'judge_2']");
+  var result = $("#score")[0];
 
   fm.onsubmit = function() {
     var score = 0;
-
     var information = new Information(sname, sid, sclass);
     var verifed = information.verify();
     if (verifed === 1) {
@@ -42,8 +44,8 @@ window.onload = function() {
       score += judge_2.getScore();
 
       alert(score);
-      result.value = score;
+      result.value = score+'分';
     }
     return false;
   };
-};
+});
