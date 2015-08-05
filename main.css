@@ -30,13 +30,12 @@ hr{
   font-family: inherit;
 }
 #information>li {
-  list-style: none;
 
   color: #000;
   display: inline-table;
   height: 100%;
   line-height: 50px;
-  margin: 0 50px;
+  margin: 0 48px;
 
   text-decoration: none;
 }
@@ -49,4 +48,11 @@ hr{
   margin-left: 23px;
   font-size: 100%;
   font-family: inherit;
+}
+.sub {
+  height: 40px;
+  width: 67px;
+  margin: auto,0;
+  margin-left: 333px;
+  background-color: blue
 }
