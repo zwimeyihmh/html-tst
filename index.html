@@ -5,9 +5,14 @@
   <meta charset="utf-8">
   <title>试题</title>
   <!-- <link rel="stylesheet" href="main.css"> -->
+  <script type="text/javascript" src="./model/information.js"></script>
+  <script type="text/javascript" src="./model/fill.js"></script>
+  <script type="text/javascript" src="./model/choseSingle.js"></script>
+  <script type="text/javascript" src="./model/choseMutlity.js"></script>
+  <script type="text/javascript" src="./model/judge.js"></script>
+
   <script type="text/javascript" src="main.js"></script>
 </head>
-
 <body>
   <div class="page">
     <form id='fm'>
@@ -46,7 +51,7 @@
         <ol id='fill'>
           <li>
             <label>UML的中文全称是：
-              <input type="text" id='answer1' name='name'>。</label>
+              <input type="text" id='answer1' name='fill_1'>。</label>
           </li>
           <li>对象最突出的特征是：
             <input type="text" name='fill2' id='answer2'>、
@@ -147,18 +152,18 @@
 
       <h2>四、&nbsp&nbsp&nbsp&nbsp&nbsp判断题</h2>
       <ol id='fill'>
-        <li>.用例图只是用于和客户交流和沟通的,用于确定需求。【<input type="radio" name="name" id='judge1' value="">正确
-        <input type="radio" name="name" id='judge2' value="">错误】 </li>
+        <li>.用例图只是用于和客户交流和沟通的,用于确定需求。【<input type="radio" name="judge_1" id='judge1' value="正确">正确
+        <input type="radio" name="judge_1" id='judge2' value="错误">错误】 </li>
 
-        <li>.在状态图中，终止状态在一个状态中允许有任意多个。 【<input type="radio" name="name" id='judge3' value="">正确
-        <input type="radio" name="name" id='judge4' value="">错误】</li>
+        <li>.在状态图中，终止状态在一个状态中允许有任意多个。 【<input type="radio" name="judge_2" id='judge3' value="正确">正确
+        <input type="radio" name="judge_2" id='judge4' value="错误">错误】</li>
 
       </ol>
       <h2>五、&nbsp&nbsp&nbsp&nbsp&nbsp简答题（每题4分，共20分）</h2>
       <p>
         1.简述什么是模型以及模型的表现形式？
       </p>
-      <textarea id='fill' name="name" rows="8" cols="40" style='border:none'></textarea>
+      <textarea id='fill' name="name" rows="8" cols="40"></textarea>
 
       <div>
         <input type="submit" id='sub' name="name" value="提交">
