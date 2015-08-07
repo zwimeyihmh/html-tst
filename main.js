@@ -1,8 +1,4 @@
 $(function() {
-  // var fm = document.getElementById('fm');
-  // var sname = document.getElementById('sname');
-  // var sid = document.getElementById('sid');
-  // var sclass = document.getElementById('sclass');
   var fm = $("#fm")[0];
   var sname = $("#sname")[0];
   var sid = $("#sid")[0];
@@ -17,7 +13,9 @@ $(function() {
   var judge2 = $("[name = 'judge_2']");
   var result = $("#score")[0];
 
-  fm.onsubmit = function() {
+
+
+  $("form").submit(function() {
     var score = 0;
     var information = new Information(sname, sid, sclass);
     var verifed = information.verify();
@@ -44,8 +42,8 @@ $(function() {
       score += judge_2.getScore();
 
       alert(score);
-      result.value = score+'分';
+      result.value = score + '分';
     }
     return false;
-  };
+  });
 });
