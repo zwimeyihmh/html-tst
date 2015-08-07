@@ -18,82 +18,94 @@
 </head>
 
 <body>
-  <div class="page">
+  <div class="text-justify container">
     <form role="form" id='fm'>
-      <h1 class="text-center form-group text-primary">统一建模语言言论考试</h1>
-      <header>
-
-        <ul id='information' class='qq'>
-          <li class="form-group ">
-            <label>考试科目：<u>统一建模语言</u></label>
-            <label>时间： <u>100 分钟</u></label>
-            <label>得分：
-              <input type="text" id='score' name='scorea'>
+      <h1 class="text-center form-group text-primary list-group">统一建模语言言论考试</h1>
+      <header class="panel panel-default panel-heading">
+        <ul id='information' class='list-unstyled'>
+          <li class="form-group panel-heading list-group-item row center-block">
+            <label class="col-md-3">考试科目：<u class="form-control">统一建模语言</u></label>
+            <label class="col-md-3">时间： <u class="form-control">100 分钟</u></label>
+            <label class="col-md-3">得分：
+              <input type="text" class="form-control" id='score' name='scorea'>
             </label>
           </li>
-          <li>
-            <label>班&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp级：
-              <input type="text" name='class' id='sclass'>
+          <li class="form-group  list-group-item row center-block">
+            <label class="col-md-3">班级：
+              <input type="text" name='class' class="form-control" placeholder="请输入班级" id='sclass'>
             </label>
-            <label>学号：
-              <input type="text" name='id' id='sid'>
+            <label class="col-md-3">学号：
+              <input type="text" name='id' class="form-control" placeholder="请输入学号" id='sid'>
             </label>
-            <label>姓名：
-              <input type="text" name='namee' id='sname'>
+            <label class="col-md-3">姓名：
+              <input type="text" name='namee' class="form-control" placeholder="请输入姓名" id='sname'>
             </label>
           </li>
         </ul>
       </header>
 
-      <section>
-        <h2>一、&nbsp&nbsp&nbsp&nbsp&nbsp填空题</h2>
-        <ol id='fill'>
-          <div class="form-group">
-            <li>
-              <label for="answer1">UML的中文全称是：</label>
-              <input type="text" id='answer1' name='fill_1'>。
-            </li>
-          </div>
+      <section class="panel panel-default panel-heading">
+        <div class="panel-heading form-group">
+          <h2 class="panel-title ">一、&nbsp&nbsp&nbsp&nbsp&nbsp填空题</h2>
+        </div>
+        <ul id='fill' class="list-unstyled row">
+          <li class="form-group row col-md-12">
+            <label for="answer1" class="col-md-2">1.UML的中文全称是：</label>
 
-          <div class="form-group">
-
-            <li>
-              <label for="answer2">对象最突出的特征是：</label>
-              <input type="text" name='fill2' id='answer2'>、
-              <input type="text" name='fill2' id='answer3'>、
-              <input type="text" name='fill2' id='answer4'>。</li>
-          </div>
-        </ol>
+            <div class="col-md-6">
+              <input type="text" id='answer1' class="form-control" name='fill_1'>
+            </div>
+          </li>
+          <li class="form-group  row col-md-12">
+            <div class="col-md-2">
+              <label for="answer2">2.对象最突出的特征是：</label>
+            </div>
+            <div class=" col-md-3">
+              <input type="text" name='fill2' class="form-control" id='answer2'>
+            </div>
+            <div class="col-md-3">
+              <input type="text" name='fill2' class="form-control" id='answer3'>
+            </div>
+            <div class="col-md-3">
+              <input type="text" name='fill2' class="form-control" id='answer4'>
+            </div>
+          </li>
+          <!-- </div> -->
+          </ol>
       </section>
 
-      <section>
+      <section class="panel panel-default panel-heading">
+        <div class="panel-heading form-group">
+          <h2 class="panel-title">二、&nbsp&nbsp&nbsp&nbsp&nbsp选择题</h2>
+        </div>
+        <ol id='fill' class="row">
+          <div class="form-group">
+            <li class="">UML与软件工程的关系是：
+          </div>
+          <ul class="list-unstyled">
+            <li>
+              <label>
+                <input type="radio" name="choice1" id='chose1A' value="A"> （A）UML就是软件工程</label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="choice1" id='chose1B' value="B"> （B）UML参与到软件工程中软件开发过程的几个阶段</label>
 
-        <h2>二、&nbsp&nbsp&nbsp&nbsp&nbsp选择题</h2>
-        <ol id='fill'>
-          <li>UML与软件工程的关系是：
-            <ul class="list-unstyled">
-              <li>
-                <label>
-                  <input type="radio" name="choice1" id='chose1A' value="A"> （A）UML就是软件工程</label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="choice1" id='chose1B' value="B"> （B）UML参与到软件工程中软件开发过程的几个阶段</label>
-
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="choice1" id='chose1C' value="C"> （C）UML与软件工程无关</label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="choice1" id='chose1D' value="D"> （D）UML是软件工程的一部分
-                </label>
-              </li>
-            </ul>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="choice1" id='chose1C' value="C"> （C）UML与软件工程无关</label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="choice1" id='chose1D' value="D"> （D）UML是软件工程的一部分
+              </label>
+            </li>
+          </ul>
           </li>
           <div class="form-group">
-            <li>Java语言支持：</div>
+            <li>Java语言支持：
+          </div>
           <ul class="list-unstyled">
             <li>
               <label>
@@ -117,10 +129,11 @@
 
       </section>
 
-      <section>
-
-        <h2>三、&nbsp&nbsp&nbsp&nbsp&nbsp多选题</h2>
-        <ol id='fill'>
+      <section class="panel panel-default panel-heading">
+        <div class="panel-heading form-group">
+          <h2 class="panel-title">三、&nbsp&nbsp&nbsp&nbsp&nbsp多选题</h2>
+        </div>
+        <ol id='fill' class="row">
           <div class="form-group">
             <li>.用例的粒度分为以下哪三种。</div>
           <ul class="list-unstyled">
@@ -137,7 +150,7 @@
                 <input type="checkbox" name="choice3" id='chose3C' value="C"> （C）用户目标级</label>
             </li>
             <li>
-              <lable>
+              <label>
                 <input type="checkbox" name="choice3" id='chose3D' value="D"> （D）子功能级</label>
             </li>
           </ul>
@@ -167,22 +180,34 @@
         </ol>
       </section>
 
-      <section>
-        <h2 class="form-group">四、&nbsp&nbsp&nbsp&nbsp&nbsp判断题</h2>
-        <ol id='fill'>
-          <li>.用例图只是用于和客户交流和沟通的,用于确定需求。【
-            <input type="radio" name="judge_1" id='judge1' value="正确">正确
-            <input type="radio" name="judge_1" id='judge2' value="错误">错误】</li>
-          <li>.在状态图中，终止状态在一个状态中允许有任意多个。 【
+      <section class="panel panel-default panel-heading">
+
+        <div class="panel-heading form-group">
+          <h2 class="form-group panel-title">四、&nbsp&nbsp&nbsp&nbsp&nbsp判断题</h2>
+        </div>
+        <ol id='fill' class="row">
+          <div class="form-group">
+            <li>用例图只是用于和客户交流和沟通的,用于确定需求。【
+              <label>
+              <input type="radio" name="judge_1" id='judge1' value="正确">正确</label>
+              <label>
+              <input type="radio" name="judge_1" id='judge2' value="错误">错误】</label></li>
+          </div>
+          <li>在状态图中，终止状态在一个状态中允许有任意多个。 【
+            <label>
             <input type="radio" name="judge_2" id='judge3' value="正确">正确
-            <input type="radio" name="judge_2" id='judge4' value="错误">错误】</li>
+            </label>
+            <label>
+            <input type="radio" name="judge_2" id='judge4' value="错误">错误】</label></li>
         </ol>
       </section>
 
-      <section>
-        <h2 class="form-group">五、&nbsp&nbsp&nbsp&nbsp&nbsp简答题（每题4分，共20分）</h2>
+      <section class="panel panel-default panel-heading">
+        <div class="panel-heading form-group">
+          <h2 class="form-group panel-title">五、&nbsp&nbsp&nbsp&nbsp&nbsp简答题（每题4分，共20分）</h2>
+        </div>
         <p>1.简述什么是模型以及模型的表现形式？</p>
-        <textarea id='filla' name="name" rows="8" cols="40"></textarea>
+        <textarea id='filla' name="name" class="form-control" rows="8" cols="40"></textarea>
         <div class="form-group">
           <input type="submit" class="btn  btn-primary btn-lg" id='sub' name="name" value="提交">
         </div>
